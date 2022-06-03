@@ -29,7 +29,10 @@ class ArchiComponent:
 
 def parse_archi_xml():
     archi_components = []
+    # Archi models are picked up from -
+    # https://github.com/borkdominik/CM2KG/tree/main/Experiments/EMF/Archi/ManyModels/repo-github-archimate/models
     path = 'D://github//archi_models'
+
     for archi_xml in os.listdir(path):
         file_name = path + "//" + archi_xml
         tree = ET.parse(file_name)
